@@ -1,0 +1,81 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  /*outline: 1px dashed red;*/
+}
+/*Page styling begins here*/
+body {
+  font-family: arial;
+  background: grey;
+}
+#wrapper {
+  margin: 50px auto;
+  width: 840px;
+}
+#left_col {
+  width: 365px;
+  padding: 20px;
+  margin: 10px 20px 0px 0px;
+  display: inline-block;
+  vertical-align: top;
+  background: white;
+  border: 2px solid maroon;
+  border-radius: 8px;
+  box-shadow: 2px 3px 5px black;
+}
+#right_col {
+  width: 400px;
+  display: inline-block;
+}
+#form_labels {
+  /*width: 185px;*/
+  display: inline-block;
+}
+#form_fields {
+  /*width: 185px;*/
+  display: inline-block;
+  vertical-align: top;
+}
+#btn {
+  margin: 10px 0px;
+}
+p {
+  margin: 7px 0px;
+  padding: 2px;
+  display: block;
+}
+input {
+  margin: 5px 0px;
+  width: 195px;
+  display: block;
+}
+textarea {
+  display: block;
+}
+h1 {
+  height: 50px;
+  margin: 20px 0px;
+  padding: 5px;
+}
+.showDesc{
+  padding: 5px;
+  font-size: 18px
+}
+.card {
+  width:380px;
+  height: 100px;
+  margin: 10px 5px;
+  padding: 5px;
+  background: white;
+  border: 2px solid maroon;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 2px 3px 5px black;
+}
+.showName {
+  display: block;
+}
+.showDesc {
+  display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $(document).on("click","#btn",function(){
+          $("#form").submit();
+        });
+        //Flip between cards
+        $(document).on("click",".card",function(){
+          $(this).children("div").toggle(800);
+        });
+        // Adds new contact card
+        $("#form").submit(function(){
+          $('#right_col').append("<div class='card'><div class='showName'><h1>" + $('#fName').val() + " " + $('#lName').val() + "</h1></div><div class='showDesc'>" + $('#desc').val() + "</div></div>");
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="left_col">
+        <form id="form" action="#" method="post">
+          <div id="form_labels">
+            <p>First Name:</p>
+            <p>Last Name:</p>
+            <p>Description:</p>
+          </div>
+          <div id="form_fields">
+            <input id="fName" type="text" name="First Name">
+            <input id="lName" type="text" name="Last Name">
+          </div>
+          <textarea id="desc" name="Desc" cols="50" rows="4"></textarea>
+        </form>
+        <button id="btn">Submit</button>
+      </div>
+      <div id="right_col">
+        <!-- COntact cards get appended here -->
+      </div>
+    </div>
+  </body>
+</html>
